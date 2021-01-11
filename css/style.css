@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.container{
+    max-width: 1123px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list{
+    display: flex;
+    
+}
+.menu__list-item + .menu__list-item{
+    margin-left: 23px;
+    
+}
+.menu__list-link{
+    text-decoration: none;
+    color: #2F281E;
+    font-size: 14px;
+    line-height: 28px;
+    
+}
