@@ -19,6 +19,7 @@
 }
 .menu{
     margin-left: auto;
+    font-family: 'Poppins', sans-serif;
 }
 .menu__list{
     display: flex;
@@ -34,10 +35,12 @@
     font-size: 14px;
     line-height: 28px;
     
+    
 }
 .user__nav{
     margin-left: 53px;
     margin-right: 13px;
+    font-family: 'Poppins', sans-serif;
 
 }
 .user__nav-link{
@@ -49,12 +52,12 @@
     font-weight: 600px;
     font-size: 16px;
     line-height: 24px;
-
+    
 }
 .user__nav-link + .user__nav-link{
     margin-left: 14px;
     background-color: #FF9900;
     color: #FFFFFF;
     border-color: transparent;
-
+    
 }
