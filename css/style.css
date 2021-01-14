@@ -175,9 +175,11 @@ button{
     
 }
 .prof__inner{
-    background-image: url(/WEB/DesignThinking/img/prof.svg);
-    background-repeat: no-repeat;
-    padding: 520px 0 574px;
+    
+    
+}
+.prof__list{
+    width: 481px;
 }
 .prof__text-item{
     margin-bottom: 22px;
