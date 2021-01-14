@@ -18,6 +18,14 @@ button{
 .title{
     color: #2F281E;
 }
+.title__second{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 30px;
+    max-width: 539px;
+    color: #2F281E;
+}
 .container{
     max-width: 1123px;
     margin: 0 auto;
@@ -121,11 +129,6 @@ button{
     margin-bottom: 46px;
 }
 .feature__title{
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
-    margin-bottom: 30px;
-    max-width: 539px;
     text-align: center;
     padding: 0 10px; /*для адаптива. т.к. заголовок находится без контейнера*/
     margin: 0 auto 46px; /*центрируем заголовок в секции*/
@@ -170,4 +173,21 @@ button{
     margin: 0 auto;
     border-color: transparent;
     
+}
+.prof__inner{
+    background-image: url(/WEB/DesignThinking/img/prof.svg);
+    background-repeat: no-repeat;
+    padding: 520px 0 574px;
+}
+.prof__text-item{
+    margin-bottom: 22px;
+}
+.prof__title{
+    margin-bottom: 34px;
+}
+.prof__text{
+    margin-bottom: 40px;
+}
+.prof__title-item{
+    margin-bottom: 26px;
 }
