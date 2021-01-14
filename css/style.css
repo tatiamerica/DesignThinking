@@ -93,7 +93,7 @@ button{
 .designthinking__btn{
     background-color: #FF9900;
     color: #FFFFFF;
-    border-color: transparent;
+    border-color:  transparent;
     padding: 20px 41px;
     border-radius: 4px;
     margin-right: 31px;
@@ -114,5 +114,60 @@ button{
     width: 17px;
     height: 19px;
     background-image: url(/WEB/DesignThinking/img/Triangle.svg);
+    
+}
+.feature{
+    padding-top: 110px;
+    margin-bottom: 46px;
+}
+.feature__title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 30px;
+    max-width: 539px;
+    text-align: center;
+    padding: 0 10px; /*для адаптива. т.к. заголовок находится без контейнера*/
+    margin: 0 auto 46px; /*центрируем заголовок в секции*/
+    
+}
+.feature__inner{
+    background-image: url(/WEB/DesignThinking/img/Bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 90px;
+    background-position: center bottom;
+}
+.feature__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 8px 16px 0;
+    margin-bottom: 29px;
+}
+.feature__item{
+    width: 240px;
+}
+.feature__img{
+    margin-bottom: 30px;
 
+}
+.feature__items-title{
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+.user__nav-link{
+    background-color: #FF9900;
+    color: #FFFFFF;
+    border-radius: 4px;
+    display: block;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    width: 173px;
+    margin: 0 auto;
+    border-color: transparent;
+    
 }
