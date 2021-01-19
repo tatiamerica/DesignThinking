@@ -260,19 +260,40 @@ button{
 .team__inner{
     /*padding: 120px 0 380px;*/
     position: relative;
-    padding-top: 116px;
-    padding-bottom: 135px;
+    padding-bottom: 380px;
+   
+
 }
 
 .team__person{
     position: absolute;
+    width: 98px;
+    height: 98px;
+}
+
+.team__person--1{
     right: 95px;
     top: 157px;
-
+}
+.team__person--2{
+    left: 0px;
+    top: 223px;
+}
+.team__person--3{
+    right: 0px;
+    top: 475px;
+}
+.team__person--4{
+    left: 208px;
+    bottom: 238px;
+}
+.team__person--5{
+    bottom: 79px;
+    right: 365px;
 }
 .photo__person{
     border-radius: 50%;
-    overflow: hidden;
+    overflow: hidden;/*если поставить другую картинку большего размера то она будет вмещаться в это окно*/
     width: 98px;
     height: 98px;
     object-fit: cover;
@@ -280,16 +301,54 @@ button{
 .speech{
     background-color: #FFFFFF;
     padding: 14px 20px 15px;
-    width: 281px;
     text-align: center;
-    display: inline-block;
     color: #2F281E;
     box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
     border-radius: 26px;
     position: absolute;
     top:-30px;
     right: 75px;
-   
-    
+    white-space: nowrap; /*текст не переходит на другую строку*/
+}
+.speech.speech__item--left{
+    top:-41px;
+    right: auto;
+    left: 62px;
+
+}
+
+/*кружочки у всех кроме team__person--2*/
+.speech__item::after,
+.speech__item::before,
+.speech__item--left::after,
+.speech__item--left::before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}    
+.speech__item::after,
+.speech__item--left::after{ 
+    width: 17px;
+    height: 17px;
+    bottom: -7px;
+    right: 30px;
+}
+.speech__item::before,
+.speech__item--left::before{
+    width: 9px;
+    height: 9px;
+    bottom: -17px;
+    right: 9px;
+}
+/*кружочки у team__person--2*/
+.speech__item--left::after{
+    left: 30px;
+    right: auto;
+}
+
+.speech__item--left::before{
+    left: 9px;
+    right: auto;
 
 }
