@@ -227,14 +227,7 @@ button{
     background-size: cover;
 }
 
-.team__inner{
-    /*padding: 120px 0 380px;*/
-    position: relative;
-    padding-top: 116px;
-    padding-bottom: 135px;
-    
 
-}
 /*текстовый блок*/
 .text__inner{
    text-align: center;
@@ -264,6 +257,12 @@ button{
 }
 
 /*команда*/
+.team__inner{
+    /*padding: 120px 0 380px;*/
+    position: relative;
+    padding-top: 116px;
+    padding-bottom: 135px;
+}
 
 .team__person{
     position: absolute;
@@ -289,7 +288,7 @@ button{
     border-radius: 26px;
     position: absolute;
     top:-30px;
-    right: 76px;
+    right: 75px;
    
     
 
