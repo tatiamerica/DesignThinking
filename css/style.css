@@ -392,7 +392,7 @@ padding: 0 20px;
     color: #544837;
     padding: 12px;
 }
-.blog__title{
+.title__blog{
     font-weight: 700;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
@@ -400,6 +400,33 @@ padding: 0 20px;
     text-decoration: none;
     color: #2F281E;
     text-decoration: none;
-    margin-bottom: 39px;
+    margin-bottom: 82px;
+    display: inline-block;/*т.к. строчный тэг не применит margin*/
+    transition: all .3s;/*плавный переход*/
     
+}
+.title__blog:hover{
+    color: #FF9900
+}
+
+.slick-dots{
+    list-style: none;
+    display: flex;/*разворот списка в горизонт положение*/
+    justify-content: center; /*центрируем*/
+}
+
+.slick-dots button{
+    width: 16px;
+    height: 16px;
+    border: none;
+    font-size: 0px;
+    background-color: #efefee;
+    padding: 0px;
+    border-radius: 50%;
+    margin: 0 5px;
+
+}
+
+.slick-dots .slick-active button{
+    background-color: #FF9900;
 }
