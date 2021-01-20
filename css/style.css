@@ -351,3 +351,55 @@ button{
     right: auto;
 
 }
+.blog{
+    margin: 30px 0 120px;
+}
+.blog__title{
+    font-size: 34px;
+}
+.blog__text{
+    margin-bottom: 55px;
+}
+
+.slider{
+margin: 0 -20px;
+}
+
+.blog__item{
+padding: 0 20px;
+}
+.photo__blog{
+    width: 343px;
+    height: 185px;
+    overflow: hidden;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 25px;
+
+}
+.blog__info{
+    padding-right: 54px;
+
+}
+.blog__author{
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 28px;
+    text-decoration: none;
+    color: #544837;
+    padding: 12px;
+}
+.blog__title{
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 34px;
+    text-decoration: none;
+    color: #2F281E;
+    text-decoration: none;
+    margin-bottom: 39px;
+    
+}
