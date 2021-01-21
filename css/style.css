@@ -408,6 +408,7 @@ padding: 0 20px;
 .title__blog:hover{
     color: #FF9900
 }
+/*работа с dots ищим классы в инскекторе эл*/
 
 .slick-dots{
     list-style: none;
@@ -429,4 +430,72 @@ padding: 0 20px;
 
 .slick-dots .slick-active button{
     background-color: #FF9900;
+           
+}
+.slick-slide-control00 .slick-slide00 .slick-slide-control01 .slick-slide-control02{
+    color: #efefee
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: top center;
+    border-top: 1px solid  rgba(188, 208, 229, 0.496913);
+    padding-top: 106px;
+    margin-bottom: 95px;
+        
+}
+.footer__menu{
+    width: 135px;
+}
+.footer__title-item, .footer__form-title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-style: normal;
+    color: #2F281E;
+    margin-bottom: 35px;
+        
+}
+
+.footer__list{
+    list-style: none;
+}
+
+.footer__list-link{
+    text-decoration: none;
+    color: #544837;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 400;
+    
+}
+.footer__form{
+    width: 330px;
+
+}
+.form__input{
+    height: 48px;
+    padding: 0 15px;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    width: 100%;
+    margin-bottom: 21px;
+    display: inline-block;
+
+}
+.form__input::placeholder{
+    color: #BCD0E5;
+    font-size: 16px;
+    line-height: 28px;
+
+}
+
+.form__btn{
+    background-color: #FF9900;
+    color: #FFFFFF;
+    border-color:  transparent;
+    padding: 8px 15px 7px;
+    border-radius: 4px;
+      
 }
