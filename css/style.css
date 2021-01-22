@@ -42,8 +42,10 @@ button{
 .menu__list{
     display: flex;
 }
-.menu__list-item + .menu__list-item{
-    margin-left: 23px;
+
+/*применится ко всем кроме первого эл*/
+.menu__list-item + .menu__list-item{ 
+    margin-left: 24px; 
     
 }
 .menu__list-link{
@@ -54,28 +56,37 @@ button{
     font-weight: 400;
 }
 .user__nav{
-    margin-left: 53px;
+    margin-left: 52px;
     margin-right: 13px;
+    display: flex;
 
 }
-.user__nav-link{
+.user__link-1{
     border: solid 1px #BCD0E5;
     text-decoration: none;
     color:#173A56;
     border-radius: 4px;
     padding: 11px 23px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     
 }
-.user__nav-link + .user__nav-link{
+.user__link-2{
+    border: solid 1px #BCD0E5;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 11px 23px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
     margin-left: 14px;
     background-color: #FF9900;
     color: #FFFFFF;
     border-color: transparent;
-    
 }
+
+
 .designthinking__inner{
     padding: 133px 0 80px;
     background-image: url(/WEB/DesignThinking/img/party.svg);
@@ -167,10 +178,13 @@ button{
     font-weight: 700;
     line-height: 24px;
     text-decoration: none;
-    width: 173px;
-    margin: 0 auto;
+    width: 175px;
+    height: 53px;
+    text-align: center;
     border-color: transparent;
-    
+    padding-top: 15px;
+    margin: 0 auto;
+      
 }
 .prof{
     padding: 120px 0 100px;
