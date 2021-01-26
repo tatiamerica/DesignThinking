@@ -14,14 +14,21 @@
 }
  }
 
- @media (min-width: 575px) and (max-width: 768px){
-   /* .user__nav{
-        margin-left: 52px;
-        margin-right: 13px;
-        display: flex;
-    }*/
+ @media (min-width: 574px) and (max-width: 857px){
+.header__inner{
+    display: block;
+}
+.menu__list{
+    padding: 0px 25px 25px;
+}
+.user__nav{
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+    text-align: center;
+}
  }
-@media (max-width: 574px){
+@media (max-width: 573px){
 .header__inner{
     display: block;
 }
