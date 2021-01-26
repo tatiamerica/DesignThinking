@@ -14,7 +14,14 @@
 }
  }
 
-@media (max-width: 500px){
+ @media (min-width: 575px) and (max-width: 768px){
+   /* .user__nav{
+        margin-left: 52px;
+        margin-right: 13px;
+        display: flex;
+    }*/
+ }
+@media (max-width: 574px){
 .header__inner{
     display: block;
 }
@@ -36,5 +43,5 @@
     padding-top: 25px;
     display: block;
     text-align: center;
-}}
-
+}
+}
