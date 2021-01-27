@@ -12,7 +12,38 @@
     justify-content: flex-end;
     padding: 25px;
 }
+.designthinking__inner{
+    background-image: none;
+    padding: 30px 0 30px;
+}
+.feature__list{
+    flex-wrap: wrap;/*доп обертка*/
+}
+
+.feature__item{
+    width: 50%;/*в одном блоке будет 2 эл вместо 4*/
+    margin-bottom: 30px;
+    padding-right: 10px;
  }
+.prof__inner-img{
+    width: 50%;
+    order: 1; /*приоритет первый текст или картинка.
+    если текст первый - order:1; если картинка - order:-1; */
+}
+
+
+}
+@media (max-width: 1174px){
+.slider{
+    margin: 0px;    
+    }
+.photo__blog{
+    width: 100%;
+}
+.blog__item{
+    padding: 0 10px;
+}
+}
 
  @media (min-width: 574px) and (max-width: 857px){
 .header__inner{
@@ -27,13 +58,74 @@
     display: block;
     text-align: center;
 }
- }
+.designthinking__inner{
+    padding: 90px 0 80px;
+}    
+.designthinking__title{
+    font-size: 35px;
+}
+.feature{
+    padding-top: 50px;
+    margin-bottom: 25px;
+}
+
+.prof{
+    padding: 50px 0 25px;
+}
+.prof__inner{
+    flex-wrap: wrap;/*доп обертка чтобы объединить все эл*/
+    margin-bottom: 25px;
+}
+.prof__list{
+    max-width: 100%;
+}
+.prof__pretitle{
+    margin-bottom: 23px;
+}
+.prof__inner-img{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 23px;
+}
+.text__inner{
+    padding-top: 50px;
+}
+.team__person{
+    display: none;
+}
+.team__inner{
+    padding-bottom: 50px;
+}
+.photo__blog{
+    width: 100%;
+}
+}
 @media (max-width: 573px){
 .header__inner{
     display: block;
 }
+/*делаем меню для мобильной версии*/
 .menu__list{
-    display: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    text-align: center;
+    transition: all .2s;/*плавность кликанья*/
+    transform: translateY(-300%);/*скрываем меню вверху*/
+}
+.menu__list.menu__list--active{
+    transform: translateY(0%); /*при активном меню, нажимем на кнопку и меню сворачивается*/
+    transition: all .2s; /*плавность кликанья*/
+}
+.menu__list-item + .menu__list-item{ 
+    margin-left: 0px; 
+}
+/*ссылки удобные для нажатия*/
+.menu__list-link{
+    display: block;
+    padding: 10px;
 }
 .menu__btn{
     display: block;
@@ -50,5 +142,72 @@
     padding-top: 25px;
     display: block;
     text-align: center;
+}
+.designthinking__title{
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    max-width: 518px;
+}
+.designthinking__text{
+    margin-bottom: 35px;
+}
+.designthinking__btn{
+    margin-bottom: 40px;
+}
+.feature__title,.team__title,.blog__title,
+.title__second{ /*второй заготовок*/
+    font-size: 28px;
+    line-height: 40px;
+}
+.feature__list{
+    flex-wrap: wrap;
+}
+.feature__item{
+    width: 100%;
+}
+.prof{
+    padding: 50px 0 25px;
+}
+.prof__inner{
+    flex-wrap: wrap;/*доп обертка чтобы объединить все эл*/
+    margin-bottom: 25px;
+}
+.prof__inner-img{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 23px;
+}
+.prof__pretitle{
+    margin-bottom: 23px;
+}
+.text__inner{
+    padding-top: 50px;
+}
+.team__person{
+    display: none;
+}
+.team__inner{
+    padding-bottom: 50px;
+}
+.team__title{
+    margin-bottom: 25px;
+}
+.slider{
+    margin: 0px;    
+}
+.photo__blog{
+    width: 100%;
+    height: 230px;
+}
+.blog__info{
+    padding-right: 0px;
+
+}
+.blog__item{
+    padding: 0 10px;
+}
+.title__blog{
+    margin-bottom: 15px;
 }
 }
