@@ -1,8 +1,19 @@
 /*смотрим на нижний скрол. Если есть, то HTML оставляем только меню, остальные отключаем ctrl+/
 пишем медиа запросы добавляя по 1 секции */
 
-@media (max-width: 990px){
+@media (max-width: 1174px){
+    .slider{
+        margin: 0px;    
+        }
+    .photo__blog{
+        width: 100%;
+    }
+    .blog__item{
+        padding: 0 10px;
+    }
+    }
 
+@media (max-width: 990px){
 .header__inner{
     flex-wrap: wrap;
     height: auto;
@@ -19,7 +30,6 @@
 .feature__list{
     flex-wrap: wrap;/*доп обертка*/
 }
-
 .feature__item{
     width: 50%;/*в одном блоке будет 2 эл вместо 4*/
     margin-bottom: 30px;
@@ -30,21 +40,7 @@
     order: 1; /*приоритет первый текст или картинка.
     если текст первый - order:1; если картинка - order:-1; */
 }
-
-
 }
-@media (max-width: 1174px){
-.slider{
-    margin: 0px;    
-    }
-.photo__blog{
-    width: 100%;
-}
-.blog__item{
-    padding: 0 10px;
-}
-}
-
  @media (min-width: 574px) and (max-width: 857px){
 .header__inner{
     display: block;
@@ -68,7 +64,6 @@
     padding-top: 50px;
     margin-bottom: 25px;
 }
-
 .prof{
     padding: 50px 0 25px;
 }
@@ -99,10 +94,22 @@
 .photo__blog{
     width: 100%;
 }
+.footer__inner{
+    flex-wrap: wrap;
 }
-@media (max-width: 573px){
-.header__inner{
+.footer__form{
+    width: 100%;
+    padding-top: 23px;
+}
+.footer__form-title{
+    margin-bottom: 20px;
+}
+}
+@media (max-width: 573px){/*320px минимальный размер*/
+.header__inner .feature{
     display: block;
+    padding-top: 30%;
+    margin-bottom: 30%;
 }
 /*делаем меню для мобильной версии*/
 .menu__list{
@@ -133,7 +140,6 @@
     right: 15px;
     top: 15px;
     cursor: pointer;
-
 }
 /*ставлю кнопки по центру*/
 .user__nav{
@@ -208,6 +214,22 @@
     padding: 0 10px;
 }
 .title__blog{
+    margin-bottom: 15px;
+}
+.footer__inner{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.footer__form{
+    width: 100%;
+    padding-top: 23px;
+}
+.footer__form-title{
+    margin-bottom: 20px;
+}
+.footer .logo{
+    width: 100%;
     margin-bottom: 15px;
 }
 }
