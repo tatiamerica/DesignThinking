@@ -1,0 +1,22 @@
+{
+  "name": "designthinking-gulp",
+  "version": "1.0.0",
+  "description": "gulpversion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatiamerica/DesignThinking.git"
+  },
+  "author": "Tati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatiamerica/DesignThinking/issues"
+  },
+  "homepage": "https://github.com/tatiamerica/DesignThinking#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
