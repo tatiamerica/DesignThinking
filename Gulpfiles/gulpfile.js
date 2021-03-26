@@ -41,6 +41,7 @@ function browserSync(params) {
     })
 }
 
+
 let watch = gulp.parallel(browserSync);
 
 exports.watch = watch;
