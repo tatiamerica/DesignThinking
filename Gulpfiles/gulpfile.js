@@ -24,8 +24,24 @@ let path = {
         js: sourse_folder + "/js/**/*.js",
         img: sourse_folder + "/img/**/*.{jpg,png,svg,gir,ico,webp}",
     },
-    clean:"./" + project_folder + "/"
+    clean: "./" + project_folder + "/"
 }
 
 let { src, dest } = require('gulp'),
     gulp = reguire('guip'),
+    browsersync = require("browser-sync").create();
+
+function browserSync(params) {
+    browsersync.init({
+        srever: {
+            baseDir: "./" + project_folder + "/"
+        },
+        port: 3000,
+        notify: false
+    })
+}
+
+let watch = gulp.parallel(browserSync);
+
+exports.watch = watch;
+exports.default = watch;
