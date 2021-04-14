@@ -46,3 +46,15 @@ let watch = gulp.parallel(browserSync);
 
 exports.watch = watch;
 exports.default = watch;
+
+const { src, dest } = reguire('gulp');
+
+const scss = require('gulp-sass');
+
+function styles() {
+    return src('Gulpfiles/app/SCSS/style.scss')
+        .pipe(scss())
+        .pipe(dest('Gulpfiles/app/css'))
+}
+
+exports.styles = styles;
